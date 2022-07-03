@@ -2,6 +2,7 @@ from ast import Break
 import pandas as pd
 import numpy as np
 import configparser
+import logging
 
 
 def get_cfg(cfg_path, cfg_section, request_item):
@@ -72,3 +73,7 @@ def reruning_script (msg_userinput):
     elif user_input == 'false':
         print('closing the script - thank you')
         return False
+
+def logging_error (error_exception):
+    logging.basicConfig(filename='error.log',filemode = 'a' , format='%(asctime)s - %(message)s', level=logging.INFO)
+    logging.info(error_exception)
