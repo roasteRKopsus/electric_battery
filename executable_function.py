@@ -40,17 +40,3 @@ def run_function(path, col_battery, col_timestamp, col_timediff,col_interpolatio
                 string_val = function_bundling.str_val(df = df , data_status=is_clean_data, interpolating_status= is_interpolating_data, charge_val=charge, discharge_val=discharge )
                 
             return df_fill_missing_time
-
-
-# run_function(path=cfg_raw_file_path, col_battery=cfg_column_battery_power, col_timediff=cfg_column_timediff, col_timestamp=cfg_column_timestamp, pandas_minutes_key=cfg_pandas_minutes_key, is_clean_data= False, is_interpolating_data=False, )
-# run_function(path=cfg_raw_file_path, col_battery=cfg_column_battery_power, col_timediff=cfg_column_timediff, col_timestamp=cfg_column_timestamp, pandas_minutes_key=cfg_pandas_minutes_key, is_clean_data= True, is_interpolating_data=True, )
-
-
-    
-    # config_file = data_clean.open_csv(filemname= config_path)
-
-
-
-# sum_unclean(path=cfg_raw_file_path, col_battery = cfg_column_battery_power)
-# sum_clean(path=cfg_raw_file_path, col_battery=cfg_column_battery_power, 
-#         col_timestamp=cfg_column_timestamp, col_timediff=cfg_column_timediff, pandas_minutes_key=cfg_pandas_minutes_key)
